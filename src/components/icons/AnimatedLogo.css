@@ -1,0 +1,43 @@
+#Left_Eye,
+#Right_Eye,
+#clippath-left,
+#clippath-right,
+#Left_Horn,
+#Right_Horn {
+    transition: all 0.3s ease-in-out;
+}
+
+.Logo-LookUp #Left_Eye,
+.Logo-LookUp #Right_Eye {
+    transform: translate(0px, -20px);
+}
+
+.Logo-LookDown #Left_Eye,
+.Logo-LookDown #Right_Eye {
+    transform: translate(0px, 20px);
+}
+
+.Logo-LookLeft #Left_Eye,
+.Logo-LookLeft #Right_Eye {
+    transform: translate(-25px, 0px);
+}
+
+.Logo-LookRight #Left_Eye,
+.Logo-LookRight #Right_Eye {
+    transform: translate(25px, 0px);
+}
+
+.Logo-RaiseEyebrow #clippath-left,
+.Logo-RaiseEyebrow #clippath-right {
+    transform: translate(0px, -5px);
+}
+
+.Logo-Squint #clippath-left,
+.Logo-Squint #clippath-right {
+    transform: translate(0px, 15px);
+}
+
+.Logo-RaiseHorns #Right_Horn,
+.Logo-RaiseHorns #Left_Horn {
+    transform: translate(0px, -15px);
+}

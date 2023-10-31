@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 342.59 286.45" fill="currentColor">
+    <defs>
+        <style>
+            .cls-1 {
+            stroke: currentColor;
+            stroke-miterlimit: 4;
+            stroke-width: 20px;
+            }
+
+            .cls-1, .cls-2 {
+            fill: none;
+            }
+
+            .cls-3, .cls-2 {
+            stroke-width: 0px;
+            fill: currentColor;
+            }
+
+            .cls-4 {
+            clip-path: url(#clippath-right);
+            fill: currentColor;
+            }
+
+            .cls-5 {
+            clip-path: url(#clippath-left);
+            fill: currentColor;
+            }
+        </style>
+        <clipPath id="clippath-left">
+            <rect id="Clipping_Left" data-name="Clipping Left" class="cls-2" x="188.56" y="168.8" width="88.35"
+                  height="73.39" transform="translate(-32.15 43.54) rotate(-10)"/>
+        </clipPath>
+        <clipPath id="clippath-right">
+            <rect id="Clipping_Right" data-name="Clipping Right" class="cls-2" x="65.78" y="183.06" width="84.49"
+                  height="73.39" transform="translate(39.8 -15.42) rotate(10)"/>
+        </clipPath>
+    </defs>
+    <path id="Right_Horn" data-name="Right Horn" class="cls-3"
+          d="m329.39,35.9c-.23-2.16-.4-4.49-1.56-6.39-.25-.39-.96.34-1.16.5-.67.58-1.2,1.26-1.61,2.04-2.99,5.44-6.56,10.58-9.67,15.94-3.28,3.62-6,7.71-9.38,11.23-4.67,2.83-9.48,5.95-14.39,8.11-1.98.97-4.34,1.43-6.06,2.82-.2.11-.39.31-.51.51-.24.31-.51.69-.33.71.09-.04.19-.07.29-.1.73,4.3,2.31,8.42,4.01,12.43,2.02,4.56,6.63,6.95,10.86,9.1,2.07,1.32,4.36,2.17,6.59,3.17,1.69.58,3.38,1.59,5.21,1.4.65,0,1.13-.5,1.52-.99.95-.69,1.8-1.55,2.48-2.5,2.53-3.57,5.01-7.2,7.11-11.04,3.03-5.43,6.32-11.1,6.53-17.46.09-9.83,1.11-19.66.04-29.47Z"/>
+    <path id="Left_Horn" data-name="Left Horn" class="cls-3"
+          d="m57.36,70.16c-1.72-1.4-4.08-1.85-6.07-2.82-4.91-2.16-9.71-5.28-14.38-8.11-3.38-3.52-6.1-7.61-9.38-11.23-3.11-5.36-6.68-10.51-9.67-15.94-.41-.79-.94-1.46-1.61-2.04-.2-.16-.91-.89-1.16-.5-1.16,1.9-1.32,4.22-1.55,6.39-1.07,9.82-.05,19.65.04,29.47.21,6.36,3.51,12.04,6.53,17.46,2.1,3.84,4.58,7.47,7.11,11.04.69.95,1.54,1.81,2.48,2.5.39.49.86,1,1.52.99,1.83.2,3.52-.82,5.21-1.4,2.23-1,4.53-1.85,6.59-3.17,4.23-2.15,8.85-4.54,10.86-9.1,1.7-4.01,3.29-8.13,4.01-12.43.1.04.2.06.3.1.18-.02-.09-.4-.33-.71-.13-.2-.31-.4-.51-.51Z"/>
+    <polygon id="Antenna_Body" data-name="Antenna Body" class="cls-3"
+             points="171.46 9.66 150.25 117.14 192.67 117.14 171.46 9.66"/>
+    <circle id="Antenna_Top" data-name="Antenna Top" class="cls-3" cx="171.61" cy="19.19" r="19.19"/>
+    <rect class="cls-1" x="10" y="117.14" width="322.59" height="159.3" rx="39.97" ry="39.97"/>
+    <g id="Right_Eye" data-name="Right Eye">
+        <g class="cls-5">
+            <circle id="Eye" class="cls-3" cx="229.37" cy="196.8" r="36.7"/>
+        </g>
+    </g>
+    <g id="Left_Eye" data-name="Left Eye">
+        <g class="cls-4">
+            <circle id="Eye-2" data-name="Eye" class="cls-3" cx="113.56" cy="196.8" r="36.7"/>
+        </g>
+    </g>
+</svg>
