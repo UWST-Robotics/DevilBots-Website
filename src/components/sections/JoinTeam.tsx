@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 export default function JoinTeam() {
     return (
@@ -12,12 +12,32 @@ export default function JoinTeam() {
                     </Col>
                     <Col md={8} className={"fs-5 text-light p-4"}>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <b>Sponsorship</b><br />
+                            Our team is always looking for new sponsors to help us grow and compete at the highest
+                            level! If you are interested in sponsoring our team, please check out our sponsorship
+                            tiers below and contact us at <a
+                            href={"mailto:robotics@uwstout.edu"}>robotics@uwstout.edu</a>.
                         </p>
+                        <Button
+                            variant={"primary"}
+                            className={"mb-4 me-1"}
+                            href={"/files/Devil Bots - Sponsorship Packages.pdf"}
+                        >
+                            Sponsorship Tiers
+                        </Button>
+                        <p>
+                            <b>Team Membership</b><br />
+                            If you're a UW-Stout student interested in joining our team,
+                            check out our team on UW-Stout Connect to learn more about our upcoming meetings and campus
+                            events!
+                        </p>
+                        <Button
+                            variant={"primary"}
+                            className={"me-1"}
+                            href={"https://connect.uwstout.edu/robotics/events/"}
+                        >
+                            UW-Stout Connect
+                        </Button>
                     </Col>
                 </Row>
             </Container>

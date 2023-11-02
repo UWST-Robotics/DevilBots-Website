@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import EventCards from "./EventCards.tsx";
+
+const IMAGE_COUNT = 4;
 
 export default function AboutUs() {
     return (
@@ -23,26 +24,24 @@ export default function AboutUs() {
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <hr />
-                </Col>
-            </Row>
-            <Row>
-                <Col className={"pt-5 text-center text-blue"}>
-                    <h1>
-                        Upcoming Events
-                    </h1>
-                </Col>
-                <Col md={8}>
+                <Col className={"text-center"}>
                     <div
                         style={{
                             display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexWrap: "wrap",
                         }}
                     >
-                        <EventCards />
+                        {Array.from(Array(IMAGE_COUNT).keys()).map((index) => (
+                            <img
+                                key={index}
+                                src={`/images/Gallery/${index + 1}.jpg`}
+                                alt={"Devil Bots"}
+                                className={"rounded-5 me-1 ms-1 w-100 appear-scroll"}
+                                style={{
+                                    objectFit: "cover",
+                                    objectPosition: "center",
+                                }}
+                            />
+                        ))}
                     </div>
                 </Col>
             </Row>
