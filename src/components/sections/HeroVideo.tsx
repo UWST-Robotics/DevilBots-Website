@@ -32,7 +32,7 @@ export default function HeroVideo(props: { children: React.ReactNode }) {
                 loop
                 muted
             >
-                <source src="/videos/Hero.mp4" type="video/mp4" />
+                <source src="videos/Hero.mp4" type="video/mp4" />
             </video>
             <div
                 style={{

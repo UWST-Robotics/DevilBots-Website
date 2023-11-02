@@ -6,7 +6,7 @@ export default function JoinTeam() {
             <Container>
                 <Row>
                     <Col className={"pt-1 pt-lg-5 text-center text-light-blue"}>
-                        <h1>
+                        <h1 id={"join-team"}> {/* Document scrolls to this ID */}
                             Join Our Team
                         </h1>
                     </Col>

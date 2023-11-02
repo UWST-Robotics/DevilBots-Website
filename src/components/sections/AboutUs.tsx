@@ -33,7 +33,7 @@ export default function AboutUs() {
                         {Array.from(Array(IMAGE_COUNT).keys()).map((index) => (
                             <img
                                 key={index}
-                                src={`/images/Gallery/${index + 1}.jpg`}
+                                src={`images/Gallery/${index + 1}.jpg`}
                                 alt={"Devil Bots"}
                                 className={"rounded-5 me-1 ms-1 w-100 appear-scroll"}
                                 style={{
