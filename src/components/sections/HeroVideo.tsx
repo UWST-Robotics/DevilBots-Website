@@ -36,7 +36,7 @@ export default function HeroVideo(props: { children: React.ReactNode }) {
             </video>
             <div
                 style={{
-                    background: "linear-gradient(110deg, rgba(10, 0, 80, 0.7) 0%, rgba(0, 212, 255, 0) 100%)"
+                    background: "linear-gradient(110deg, rgba(12, 0, 95, 0.9) 0%, rgba(12, 0, 95, 0.1) 100%)"
                 }}
             >
                 {props.children}

@@ -7,9 +7,9 @@ interface SponsorIconProps {
 export default function SponsorIcon(props: SponsorIconProps) {
     const { sponsor } = props;
     return (
-        <a href={sponsor.href} className={"sponsor-link"}>
+        <a href={sponsor.href} style={{ textDecoration: "none" }}>
             <img
-                src={`images/Sponsors/${sponsor.id}.png`}
+                src={`/images/Sponsors/${sponsor.id}.png`}
                 className="d-inline-block align-top"
                 alt={sponsor.id}
                 style={{

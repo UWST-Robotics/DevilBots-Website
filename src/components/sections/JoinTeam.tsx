@@ -21,7 +21,7 @@ export default function JoinTeam() {
                         <Button
                             variant={"primary"}
                             className={"mb-4 me-1"}
-                            href={"/files/Devil Bots - Sponsorship Packages.pdf"}
+                            href={"https://drive.google.com/file/d/13ODQ5-tjmZtxzelqv0PtoxOCXXOnmso7/view?usp=sharing"}
                         >
                             Sponsorship Tiers
                         </Button>
