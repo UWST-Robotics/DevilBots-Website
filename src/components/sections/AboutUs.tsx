@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import GalleryImage from "./Util/GalleryImage.tsx";
 
 const IMAGE_COUNT = 4;
 
@@ -24,26 +25,16 @@ export default function AboutUs() {
                 </Col>
             </Row>
             <Row>
-                <Col className={"text-center"}>
-                    <div
-                        style={{
-                            display: "flex",
-                        }}
+                {Array.from(Array(IMAGE_COUNT).keys()).map((index) => (
+                    <Col
+                        className={"p-1"}
+                        lg={3}
+                        xs={6}
+                        key={index}
                     >
-                        {Array.from(Array(IMAGE_COUNT).keys()).map((index) => (
-                            <img
-                                key={index}
-                                src={`images/Gallery/${index + 1}.jpg`}
-                                alt={"Devil Bots"}
-                                className={"rounded-5 me-1 ms-1 w-100 appear-scroll"}
-                                style={{
-                                    objectFit: "cover",
-                                    objectPosition: "center",
-                                }}
-                            />
-                        ))}
-                    </div>
-                </Col>
+                        <GalleryImage index={index} />
+                    </Col>
+                ))}
             </Row>
         </Container>
     );
