@@ -8,6 +8,7 @@ export const OtherSponsors: Sponsor[] = [];
 
 const MainSponsors: Sponsor[] = [
     { id: "Coex3D", href: "https://coex3d.com/" },
-    { id: "Tek Pak", href: "https://www.tekpak.com/" }
+    { id: "Tek Pak", href: "https://www.tekpak.com/" },
+    { id: "IMS", href: "https://innmacspe.com/" }
 ];
 export default MainSponsors;
