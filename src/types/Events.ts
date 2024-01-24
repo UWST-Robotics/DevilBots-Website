@@ -8,11 +8,10 @@ export interface Event {
 
 const UpcomingEvents: Event[] = [
     {
-        name: "Raider Robotics Rumble | MSOE",
-        location: "Milwaukee, WI",
-        date: "January 13, 2024",
-        detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-3737.html#general-info",
-        streamLink: "https://www.youtube.com/channel/UCwmpTR8SYNKbKKlBos61L1A"
+        name: "Purdue VEX-U Regional",
+        location: "West Lafayette, IN",
+        date: "February 24, 2024",
+        detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-4090.html#general-info",
     },
     {
         name: "SCTCC VEX-U Regional",
