@@ -13,6 +13,8 @@ const UpcomingEvents: Event[] = [
         date: "February 24, 2024",
         detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-4090.html#general-info",
     },
+    // Cancelled due to lack of teams
+    /*
     {
         name: "SCTCC VEX-U Regional",
         location: "St. Cloud, MN",
@@ -20,6 +22,7 @@ const UpcomingEvents: Event[] = [
         detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-3103.html#general-info",
         streamLink: "https://vexmn.com/livestream-options/"
     },
+    */
     {
         name: "VEX-U World Championship",
         location: "Dallas, TX",
