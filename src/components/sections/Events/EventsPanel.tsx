@@ -20,7 +20,7 @@ export default function EventsPanel() {
                         }}
                     >
                         <EventCards
-                            extraCardText={"More events to come soon!"}
+                            extraCardText={"More events are soon to come!"}
                         />
                     </div>
                 </Col>

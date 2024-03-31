@@ -23,9 +23,13 @@ export default function EventCards(props: EventCardsProps) {
             {props.extraCardText && (
                 <Card
                     className={"text-center"}
-                    style={{ maxWidth: "15rem", borderStyle: "dashed" }}
+                    style={{
+                        width: "15rem",
+                        height: 162,
+                        borderStyle: "dashed"
+                    }}
                 >
-                    <Card.Body>
+                    <Card.Body className={"d-flex justify-content-center align-items-center"}>
                         <Card.Text className={"text-muted p-3"}>
                             {props.extraCardText}
                         </Card.Text>
