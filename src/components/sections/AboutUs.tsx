@@ -1,13 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
-import GalleryImage from "./Util/GalleryImage.tsx";
+import Behold from "./Embed/Behold.tsx";
+import { Instagram } from "react-bootstrap-icons";
 
-const IMAGE_COUNT = 4;
+//const IMAGE_COUNT = 4;
 
 export default function AboutUs() {
     return (
-        <Container className={"pt-5 pb-3"}>
-            <Row>
-                <Col className={"pt-1 pt-lg-5 text-center text-blue"}>
+        <Container className={"pt-5 mt-5 pb-3"}>
+            <Row className={"mt-md-2"}>
+                <Col className={"pt-1 pt-md-5 text-center text-blue"}>
                     <h1>
                         Who are we?
                     </h1>
@@ -25,16 +26,16 @@ export default function AboutUs() {
                 </Col>
             </Row>
             <Row>
-                {Array.from(Array(IMAGE_COUNT).keys()).map((index) => (
-                    <Col
-                        className={"p-1"}
-                        lg={3}
-                        xs={6}
-                        key={index}
-                    >
-                        <GalleryImage index={index} />
-                    </Col>
-                ))}
+
+                <Col
+                    className={"p-1"}
+                >
+                    <Behold />
+                    <p className={"text-muted text-center m-2"}>
+                        Follow us on <Instagram size={16} className={"mb-1"} />:{" "}
+                        <a href={"https://www.instagram.com/stoutdevilbots/"}>@stoutdevilbots</a>
+                    </p>
+                </Col>
             </Row>
         </Container>
     );

@@ -6,8 +6,8 @@ export default function Footer() {
             <Container>
                 <Row className={"text-center"}>
                     <Col className={"m-auto"}>
-                        <h1 className={"fs-4 m-2"}>
-                            Devil Bots
+                        <h1 className={"fs-5 m-2"}>
+                            DevilBots
                         </h1>
                     </Col>
                     <Col md={8} className={"m-auto"}>

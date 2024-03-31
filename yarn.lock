@@ -201,6 +201,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@behold/react@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@behold/react/-/react-0.1.10.tgz#6a3e87c7a3532c15bdad03bcb6d076cb6282f025"
+  integrity sha512-0qJQ9WVPSmoGLAEQrBzYt1Wdm72mPUDeNqB4Raf5dttH5hzLEuXCKZalR7A1usSOdo8I0MuP3AcQV6+i4zKKyQ==
+
 "@esbuild/android-arm64@0.18.20":
   version "0.18.20"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.18.20.tgz#984b4f9c8d0377443cc2dfcef266d02244593622"
@@ -1702,6 +1707,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-fast-marquee@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/react-fast-marquee/-/react-fast-marquee-1.6.4.tgz#ac0bed0faee63e4d97e9b8cd03f3bea9f242fab3"
+  integrity sha512-LAgvhRmHdqaUQ8R5jCUwzEGFUIjnCCt3T3W8X7j7wF6DWe0SATlpP0JX1V0pp2qX3DYUezmn1Iz5AtRFdL2EWQ==
 
 react-image-gallery@^1.3.0:
   version "1.3.0"

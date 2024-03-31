@@ -8,19 +8,6 @@ export interface Event {
 
 const UpcomingEvents: Event[] = [
     {
-        name: "Purdue VEX-U Regional",
-        location: "West Lafayette, IN",
-        date: "February 24, 2024",
-        detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-4090.html#general-info",
-    },
-    {
-        name: "SCTCC VEX-U Regional",
-        location: "St. Cloud, MN",
-        date: "March 2, 2024",
-        detailsLink: "https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-23-3103.html#general-info",
-        streamLink: "https://vimeo.com/event/4093491/"
-    },
-    {
         name: "VEX-U World Championship",
         location: "Dallas, TX",
         date: "April 28-30, 2024",
