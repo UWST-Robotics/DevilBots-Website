@@ -4,28 +4,22 @@ export default function Footer() {
     return (
         <Container fluid style={{ backgroundColor: "black", color: "white" }}>
             <Container>
-                <Row className={"text-center"}>
+                <Row className={"text-center pt-3 pb-3"}>
                     <Col className={"m-auto"}>
-                        <h1 className={"fs-5 m-2"}>
-                            DevilBots
+                        <h1 className={"fs-5"}>
+                            DevilBots{" · "}<a href={"https://www.robotevents.com/teams/VEXU/DEVIL5"}>DEVIL5</a>
                         </h1>
                     </Col>
                     <Col md={8} className={"m-auto"}>
-                        <p className={"m-1"}>
+                        <h2 className={"mb-0 fs-6"}>
+                            <a href={"https://www.uwstout.edu/"}>University of Wisconsin-Stout</a>
+                        </h2>
+                        <p className={"mb-0"}>
                             <a
                                 href={"mailto:robotics@uwstout.edu"}
                                 style={{ color: "white", textDecoration: "none" }}
                             >
                                 robotics@uwstout.edu
-                            </a>
-                            {" • "}
-                            <a
-                                href={"https://www.instagram.com/stoutdevilbots/"}
-                                target={"_blank"}
-                                rel={"noreferrer"}
-                                style={{ color: "white", textDecoration: "none" }}
-                            >
-                                @stoutdevilbots
                             </a>
                         </p>
                     </Col>

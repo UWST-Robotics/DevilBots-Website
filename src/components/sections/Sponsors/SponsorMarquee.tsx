@@ -1,12 +1,15 @@
 import MainSponsors from "../../../types/MainSponsors.ts";
 import SponsorIcon from "./SponsorIcon.tsx";
 import Marquee from "react-fast-marquee";
+import useMobile from "../../../hooks/useMobile.ts";
 
 export default function SponsorMarquee() {
+    const isMobile = useMobile();
+
     return (
         <Marquee
             speed={50}
-            gradient
+            gradient={!isMobile}
             gradientColor={"black"}
         >
             {MainSponsors.map((sponsor, index) => (

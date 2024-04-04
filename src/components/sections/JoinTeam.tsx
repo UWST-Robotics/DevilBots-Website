@@ -26,10 +26,11 @@ export default function JoinTeam() {
                             Sponsorship Tiers
                         </Button>
                         <p>
-                            <b>Team Membership</b><br />
-                            If you're a UW-Stout student interested in joining our team,
-                            check out our team on UW-Stout Connect to learn more about our upcoming meetings and campus
-                            events!
+                            <b>Students</b><br />
+                            Our team is open to all students, regardless of major or experience level.
+                            If you're a current or upcoming UW-Stout student interested in joining our team,
+                            check out our page on UW-Stout Connect to learn more about our upcoming meetings and campus
+                            events:
                         </p>
                         <Button
                             variant={"primary"}

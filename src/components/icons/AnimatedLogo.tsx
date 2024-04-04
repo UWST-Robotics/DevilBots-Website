@@ -1,5 +1,6 @@
 import React from "react";
 import DevilBotsLogo from "./DevilBotsLogo.tsx";
+import useMousePos from "../../hooks/useMousePos.ts";
 
 export interface DevilBotsLogoProps {
     width?: number;
@@ -9,44 +10,57 @@ export interface DevilBotsLogoProps {
 const LEFT_EYE_ID = "Left_Eye";
 const RIGHT_EYE_ID = "Right_Eye";
 const LOGO_ID = "DevilBotsLogo";
+const MOUSE_SCALE = 0.8;
+const MAX_EYE_SCALE = 30;
 
 export default function AnimatedLogo(props: DevilBotsLogoProps) {
     const [logoClass, setLogoClass] = React.useState("Logo-Idle");
+    const mousePos = useMousePos();
 
-    React.useEffect(() => {
+    // Update the eye position
+    const updateEyePosition = React.useCallback(() => {
         const leftEye = document.getElementById(LEFT_EYE_ID);
         const rightEye = document.getElementById(RIGHT_EYE_ID);
 
-        // Handle mouse movement
-        const onMouseMove = (event: MouseEvent) => {
-            if (leftEye && rightEye) {
-                // Get the center of the logo
-                const leftEyeX = (leftEye?.getBoundingClientRect().left || 0) + (leftEye?.getBoundingClientRect().width || 0) / 2;
-                const leftEyeY = (leftEye?.getBoundingClientRect().top || 0) + (leftEye?.getBoundingClientRect().height || 0) / 2;
+        if (leftEye && rightEye) {
+            // Get the center of the logo
+            const leftEyeX = (leftEye?.getBoundingClientRect().left || 0) + (leftEye?.getBoundingClientRect().width || 0) / 2;
+            const leftEyeY = (leftEye?.getBoundingClientRect().top || 0) + (leftEye?.getBoundingClientRect().height || 0) / 2;
 
-                const rightEyeX = (rightEye?.getBoundingClientRect().left || 0) + (rightEye?.getBoundingClientRect().width || 0) / 2;
-                const rightEyeY = (rightEye?.getBoundingClientRect().top || 0) + (rightEye?.getBoundingClientRect().height || 0) / 2;
+            const rightEyeX = (rightEye?.getBoundingClientRect().left || 0) + (rightEye?.getBoundingClientRect().width || 0) / 2;
+            const rightEyeY = (rightEye?.getBoundingClientRect().top || 0) + (rightEye?.getBoundingClientRect().height || 0) / 2;
 
-                const logoX = (leftEyeX + rightEyeX) / 2;
-                const logoY = (leftEyeY + rightEyeY) / 2;
+            const logoX = (leftEyeX + rightEyeX) / 2;
+            const logoY = (leftEyeY + rightEyeY) / 2;
 
-                // Calculate the eye movement
-                let x = (event.clientX - logoX) / logoX;
-                let y = (event.clientY - logoY) / logoY;
+            // Calculate the eye movement
+            let x = (mousePos.current.x - logoX) / logoX;
+            let y = (mousePos.current.y - logoY) / logoY;
 
-                // Clamp the eye movement
-                x = Math.min(1, Math.max(-1, x));
-                y = Math.min(1, Math.max(-1, y));
+            // Scale the mouse movement
+            x *= MOUSE_SCALE;
+            y *= MOUSE_SCALE;
 
-                // Move the eyes
-                leftEye.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-                rightEye.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-            }
+            // Clamp the eye movement
+            x = Math.min(1, Math.max(-1, x));
+            y = Math.min(1, Math.max(-1, y));
+
+            // Move the eyes
+            leftEye.style.transform = `translate(${x * MAX_EYE_SCALE}px, ${y * MAX_EYE_SCALE}px)`;
+            rightEye.style.transform = `translate(${x * MAX_EYE_SCALE}px, ${y * MAX_EYE_SCALE}px)`;
         }
-
-        window.addEventListener("mousemove", onMouseMove);
-        return () => window.removeEventListener("mousemove", onMouseMove);
     }, []);
+
+    // Update the eye position on mouse move
+    React.useEffect(() => {
+        window.addEventListener("mousemove", updateEyePosition);
+        window.addEventListener("scroll", updateEyePosition);
+        return () => {
+            window.removeEventListener("mousemove", updateEyePosition);
+            window.removeEventListener("scroll", updateEyePosition);
+        }
+    }, [updateEyePosition]);
+
 
     // Handle mouse enter, click, and leave
     React.useEffect(() => {

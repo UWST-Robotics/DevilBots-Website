@@ -23,7 +23,7 @@ export default function HeroHeader() {
                     }}
                 >
                     <Col lg={5} className={"text-center text-lg-start"}>
-                        <div className={"ms-md-5 ps-md-5"}>
+                        <div className={"ms-lg-5 ps-lg-5"}>
                             <AnimatedLogo width={150} height={150} />
                             <h2 className={"fs-3 mb-0 mt-3"}>
                                 We are
