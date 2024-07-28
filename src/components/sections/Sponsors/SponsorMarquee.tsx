@@ -8,7 +8,7 @@ export default function SponsorMarquee() {
 
     return (
         <Marquee
-            speed={50}
+            speed={40}
             gradient={!isMobile}
             gradientColor={"black"}
         >

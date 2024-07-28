@@ -3,10 +3,11 @@ import React from "react";
 
 export interface ProjectSectionProps {
     imgSrc: string;
-    href?: string;
     title: string;
     muted?: boolean;
     children: React.ReactNode;
+
+    href?: string;
 }
 
 export default function ProjectPanel(props: ProjectSectionProps) {

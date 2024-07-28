@@ -9,11 +9,12 @@ export default function ProjectsSection() {
                     <ProjectPanel
                         imgSrc={"/images/Gallery/IMG_8056.JPG"}
                         title={"VEX-U Robotics"}
-                        href={"https://www.vexrobotics.com/"}
+                        href={"https://youtu.be/Tm-U1--ddJk"}
                     >
                         <p>
-                            <a href={"https://www.vexrobotics.com/"}>VEX Robotics</a> is an educational program that
-                            encourages students to explore STEM fields through hands-on robotics challenges.
+                            <a href={"https://www.vexrobotics.com/v5/competition/vrc-current-game"}>VEX Robotics</a> is
+                            an educational program that encourages students to explore STEM fields through hands-on
+                            robotics challenges.
                         </p>
                         <p>
                             Every year, VEX hosts competitions where teams can compete in regional events across the

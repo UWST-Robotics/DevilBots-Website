@@ -28,10 +28,10 @@ export default function HeroVideo() {
                     loop
                     muted
                 >
-                    <source src="videos/Hero.mp4" type="video/mp4" />
+                    <source src="/videos/Hero.mp4" type="video/mp4"/>
                 </video>
             </div>
-            <HeroBackground />
+            <HeroBackground/>
         </>
     )
 }
