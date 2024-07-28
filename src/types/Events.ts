@@ -8,11 +8,16 @@ export interface Event {
 
 const UpcomingEvents: Event[] = [
     {
+        name: "Backyard Bash",
+        location: "UW-Stout (South Lawn)",
+        date: "September 3, 2024",
+        detailsLink: "https://connect.uwstout.edu/involvement/rsvp_boot?id=2262690"
+    },
+    {
         name: "VEX-U World Championship",
         location: "Dallas, TX",
-        date: "April 28-30, 2024",
-        detailsLink: "https://roboticseducation.org/vex-robotics-world-championship/",
-        streamLink: "https://www.vexworlds.tv/#/channels/yignzh2p52kbstxrrsl8"
+        date: "May 6 - 14, 2025",
+        detailsLink: "https://www.dallassports.org/2025-vex-robotics-world-championship/"
     }
 ];
 export default UpcomingEvents;

@@ -15,8 +15,8 @@ export default function JoinTeam() {
                             <b>Sponsorship</b><br />
                             Our team is always looking for new sponsors to help us grow and compete at the highest
                             level! If you are interested in sponsoring our team, please check out our sponsorship
-                            tiers below and contact us at <a
-                            href={"mailto:robotics@uwstout.edu"}>robotics@uwstout.edu</a>.
+                            tiers below and contact us at{" "}
+                            <a href={"mailto:robotics@uwstout.edu"}>robotics@uwstout.edu</a>.
                         </p>
                         <Button
                             variant={"primary"}
@@ -35,7 +35,8 @@ export default function JoinTeam() {
                         <Button
                             variant={"primary"}
                             className={"me-1"}
-                            href={"https://connect.uwstout.edu/robotics/events/"}
+                            href={"https://connect.uwstout.edu/feeds?type=club&type_id=30935&tab=home"}
+                            title={"Requires UW-Stout login"}
                         >
                             UW-Stout Connect
                         </Button>

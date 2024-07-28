@@ -26,10 +26,10 @@ export default function HeroHeader() {
                         <div className={"ms-lg-5 ps-lg-5"}>
                             <AnimatedLogo width={150} height={150} />
                             <h2 className={"fs-3 mb-0 mt-3"}>
-                                We are
+                                Blue Devil
                             </h2>
                             <h1 style={{ fontSize: 64, marginBottom: 9 }}>
-                                DevilBots
+                                Robotics
                             </h1>
                             <h2 style={{ fontSize: 14, cursor: "pointer" }} onClick={onClick}>
                                 Join us for the 2024-25 season {">>"}
