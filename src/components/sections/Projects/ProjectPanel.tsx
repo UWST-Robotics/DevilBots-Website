@@ -4,7 +4,6 @@ import React from "react";
 export interface ProjectSectionProps {
     imgSrc: string;
     title: string;
-    muted?: boolean;
     children: React.ReactNode;
 
     href?: string;
@@ -28,58 +27,30 @@ export default function ProjectPanel(props: ProjectSectionProps) {
                     overflow: "hidden",
                 }}
             >
-                {props.muted && (
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            zIndex: 1,
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexDirection: "column",
-                            opacity: isHovered ? 1 : 0,
-                            transition: "opacity 0.2s",
-                        }}
-                    >
-                        <h3 className={"text-header"}>
-                            Soon™
-                        </h3>
-                    </div>
-                )}
-                <div
+                <CardImg
+                    src={props.imgSrc}
+                    alt={props.title}
                     style={{
-                        opacity: props.muted ? 0.2 : 1
+                        maxHeight: 165,
+                        objectFit: "cover",
                     }}
-                >
-                    <CardImg
-                        src={props.imgSrc}
-                        alt={props.title}
-                        style={{
-                            maxHeight: 165,
-                            objectFit: "cover",
-                        }}
-                    />
-                    <CardBody>
-                        <h4 className={"text-header"}>
-                            {props.title}
-                        </h4>
-                        {props.children}
-                        {props.href && (
-                            <Button
-                                href={props.href}
-                                target={"_blank"}
-                                variant={"primary"}
-                                className={"mt-2"}
-                            >
-                                Learn More
-                            </Button>
-                        )}
-                    </CardBody>
-                </div>
+                />
+                <CardBody>
+                    <h4 className={"text-header"}>
+                        {props.title}
+                    </h4>
+                    {props.children}
+                    {props.href && (
+                        <Button
+                            href={props.href}
+                            target={"_blank"}
+                            variant={"primary"}
+                            className={"mt-2"}
+                        >
+                            Learn More
+                        </Button>
+                    )}
+                </CardBody>
             </Card>
         </>
     )

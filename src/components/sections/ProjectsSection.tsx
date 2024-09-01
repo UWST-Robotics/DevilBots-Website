@@ -1,5 +1,6 @@
 import ProjectPanel from "./Projects/ProjectPanel.tsx";
 import {Col, Container, Row} from "react-bootstrap";
+import PlaceholderProjectPanel from "./Projects/PlaceholderProjectPanel.tsx";
 
 export default function ProjectsSection() {
     return (
@@ -26,7 +27,6 @@ export default function ProjectsSection() {
                     <ProjectPanel
                         imgSrc={"/images/Gallery/IMG_8057.png"}
                         title={"BattleBots"}
-                        muted
                     >
                         <p>
                             Organizations such as <a href={"https://www.nhrl.io/"}>NHRL</a> regularly host competitions
@@ -38,28 +38,12 @@ export default function ProjectsSection() {
                             competitive robot.
                         </p>
                         <p className={"text-muted fst-italic"}>
-                            Coming Soon 2024-25 Season
+                            Coming 2024-25 Season
                         </p>
                     </ProjectPanel>
                 </Col>
                 <Col md={4}>
-                    <ProjectPanel
-                        imgSrc={"/images/Gallery/IMG_0861.jpg"}
-                        title={"FIRST Robotics"}
-                        muted
-                    >
-                        <p>
-                            <a href={"https://www.firstinspires.org/"}>FIRST Robotics</a> is a program that
-                            encourages students to explore STEM fields through hands-on robotics challenges.
-                        </p>
-                        <p>
-                            For the 2024-25 season, we plan to start an Ri3D team who will design, build, and test a
-                            120lb robot in just 3 days.
-                        </p>
-                        <p className={"text-muted fst-italic"}>
-                            Coming Soon 2024-25 Season
-                        </p>
-                    </ProjectPanel>
+                    <PlaceholderProjectPanel/>
                 </Col>
             </Row>
         </Container>
