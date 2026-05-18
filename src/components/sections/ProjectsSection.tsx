@@ -10,7 +10,7 @@ export default function ProjectsSection() {
                     <ProjectPanel
                         imgSrc={"/images/Gallery/IMG_8056.JPG"}
                         title={"VEX-U Robotics"}
-                        href={"https://youtu.be/Tm-U1--ddJk"}
+                        href={"https://www.youtube.com/watch?v=xcCLpYCjtls"}
                     >
                         <p>
                             <a href={"https://www.vexrobotics.com/v5/competition/vrc-current-game"}>VEX Robotics</a> is
@@ -19,7 +19,7 @@ export default function ProjectsSection() {
                         </p>
                         <p>
                             Every year, VEX hosts competitions where teams can compete in regional events across the
-                            US and a World Championship.
+                            US and a World Championship. Next season will be our 4th year competing in VEXU.
                         </p>
                     </ProjectPanel>
                 </Col>

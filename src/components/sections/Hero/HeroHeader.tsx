@@ -32,7 +32,7 @@ export default function HeroHeader() {
                                 Robotics
                             </h1>
                             <h2 style={{ fontSize: 14, cursor: "pointer" }} onClick={onClick}>
-                                Join us for the 2024-25 season {">>"}
+                                Join us for the 2026-27 season {">>"}
                             </h2>
                         </div>
                     </Col>

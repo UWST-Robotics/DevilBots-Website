@@ -20,11 +20,11 @@ export default function Footer() {
                             className={"d-flex justify-content-center justify-content-md-end align-items-center h-100"}
                         >
                             <FooterIcon
-                                href={"https://www.instagram.com/stoutdevilbots"}
+                                href={"https://www.instagram.com/devilbots.vexu/"}
                                 icon={Instagram}
                             />
                             <FooterIcon
-                                href={"https://discord.gg/Y9P4vkwJ3a"}
+                                href={"https://discord.gg/wjzVw7w3zm"}
                                 icon={Discord}
                             />
                             <FooterIcon
