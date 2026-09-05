@@ -10,7 +10,6 @@ const MainSponsors: Sponsor[] = [
     { id: "IMS", href: "https://innmacspe.com/" },
     { id: "Phillips-Medisize", href: "https://www.phillipsmedisize.com/", large: true },
     { id: "Shape", href: "https://shapeproducts.com/", large: true },
-    { id: "Polymaker", href: "https://www.polymaker.com/", large: true },
     { id: "StoutBread", href: "https://stoutbread.com/" },
 ];
 export default MainSponsors;
