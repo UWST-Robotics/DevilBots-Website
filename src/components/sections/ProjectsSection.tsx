@@ -30,15 +30,15 @@ export default function ProjectsSection() {
                     >
                         <p>
                             Organizations such as <a href={"https://www.nhrl.io/"}>NHRL</a> regularly host competitions
-                            where teams are challenged to design, build, and test robots that can compete in
-                            head-to-head combat.
+                            where teams are challenged to design, build, and test robots that compete in
+                            head-to-head destructive combat.
                         </p>
                         <p>
-                            For the 2024-25 season, we plan to develop a team who'll work together to assemble a
-                            competitive robot.
+                            During 2024-25 we had a group developing a bot that ultimately fizzled out. We hope to revive
+                            combat robotics at Stout if there is enough interest.
                         </p>
                         <p className={"text-muted fst-italic"}>
-                            Coming 2024-25 Season
+                            Coming whenever we bring it back
                         </p>
                     </ProjectPanel>
                 </Col>

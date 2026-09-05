@@ -9,7 +9,7 @@ export default function Footer() {
                 <Row className={"pt-3 pb-3"}>
                     <Col className={"m-auto text-center text-md-start"}>
                         <h1 className={"fs-5 mb-0"}>
-                            🤖 Blue Devil Robotics 🦾
+                            Blue Devil Robotics
                         </h1>
                         <p style={{fontSize: 12}} className={"mb-1"}>
                             Organization of the <a href={"https://www.uwstout.edu"}>University of Wisconsin-Stout</a>

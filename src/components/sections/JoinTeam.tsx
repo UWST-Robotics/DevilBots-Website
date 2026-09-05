@@ -9,6 +9,13 @@ export default function JoinTeam() {
                         <h1 id={"join-team"}> {/* Document scrolls to this ID */}
                             Join Our Team
                         </h1>
+
+                        <img
+                        className={"w-100"}
+                        src={"/images/Team-photo.jpg"}
+                        alt={"The 2025-26 team at Worlds"}
+                        style={{ borderRadius: '20px' }}
+                        />
                     </Col>
                     <Col md={8} className={"text-light p-4"}>
                         <h5 className={"text-header"}>
